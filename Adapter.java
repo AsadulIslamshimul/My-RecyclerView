@@ -1,4 +1,4 @@
-package com.sixhack.troom_troom.Adapter_Troom;
+package com.sixhack.troom_troom.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import com.sixhack.troom_troom.Activites_Troom.Details_Activity_Troom;
 import com.sixhack.troom_troom.R;
 
 
-public class Adapter_Troom extends RecyclerView.Adapter<Adapter_Troom.ViewHolder> {
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private Context context;
     private int[] images;
@@ -23,7 +23,7 @@ public class Adapter_Troom extends RecyclerView.Adapter<Adapter_Troom.ViewHolder
     private  String[] times;
     private  String[] links;
 
-    public Adapter_Troom(Context context, int[] images, String[] title, String[] views, String[] times, String[] links) {
+    public Adapter(Context context, int[] images, String[] title, String[] views, String[] times, String[] links) {
         this.context = context;
         this.images = images;
         this.title = title;
